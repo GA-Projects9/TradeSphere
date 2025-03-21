@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/medium"
+    android:background="#ffffff"
+    tools:context=".activities.LoginOptionsActivity">
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            //app logo image -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/medium"
+                android:text="TradeSphere"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/loginGoogleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#573E93"
+                android:fontFamily="@font/medium"
+                android:minHeight="@dimen/m_button_height"
+                android:text="Continue With Google"
+                android:textAllCaps="true"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/google" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginPhoneBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#8966C8"
+                android:fontFamily="@font/medium"
+                android:minHeight="@dimen/m_button_height"
+                android:text="Continue With Phone"
+                android:textAllCaps="true"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/call" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginEmailBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#AB80D0"
+                android:fontFamily="@font/medium"
+                android:minHeight="@dimen/m_button_height"
+                android:text="Continue With Email"
+                android:textAllCaps="true"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/mail" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

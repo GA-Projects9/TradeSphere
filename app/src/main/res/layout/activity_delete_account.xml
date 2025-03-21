@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.DeleteAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+
+        <ImageButton
+            android:id="@+id/toolbarBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/medium"
+            android:text="Delete Account"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sorry"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="We are sorry to see you go"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/sorry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/profileTv"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="#8966C8"-->
+<!--            android:src="@drawable/person"-->
+<!--            app:shapeAppearanceOverlay="@style/ImageStyle_Circle"/>-->
+
+        <ImageView
+            android:id="@+id/deleteImage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/deleting"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/Cv"
+            android:backgroundTint="#E6DDFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@+id/deleteImage"
+            app:contentPadding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/loginLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Warning"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:layout_marginTop="0dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginLabelTv"
+                android:justificationMode="inter_word"
+                android:text="Please note that by deleting your account, it includes the deletion of all data including your ads. This action cannot be reverted."/>
+
+        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/labelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/medium"
+            android:layout_below="@+id/Cv"
+            android:text="Are you sure you still want to delete your account?"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:text="Confirm Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cornerRadius="8dp"
+            android:fontFamily="@font/medium"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/black"
+            app:icon="@drawable/delete"
+            android:minHeight="@dimen/m_button_height"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

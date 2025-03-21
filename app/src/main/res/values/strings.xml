@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TradeSphere</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_have_account_register">Not have an account? <b>REGISTER</b></string>
+    <string name="already_have_an_account_login">Already have an account? <b>LOGIN</b></string>
+    <string name="default_web_client_id">375181743837-bl2e3km20ttk98m0ffmdn8s42jkphe6r.apps.googleusercontent.com</string>
+    <string name="didn_t_recieve_any_otp_resend">Didn\'t recieve any otp? <b>RESEND</b></string>
+    <string name="forgot_password_recover">Forgot your password? <b>RECOVER</b></string>
+
+
+    <string name="google_map_api_key">AIzaSyBkKGtrzkt1zHoxyKcbtIx23n_xxI1I_54</string>
+    <string name="price_symbol">$</string>
+    <string name="are_you_sure_you_still_want_to_delete_your_account_nif_yes_please_proceed_by_clicking_the_confirm_button">Are you sure you still want to delete your account?\nIf yes, please proceed by clicking the confirm button.</string>
+</resources>

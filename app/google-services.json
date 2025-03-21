@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "375181743837",
+    "project_id": "tradespherejava",
+    "storage_bucket": "tradespherejava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375181743837:android:7699e321b12a0f0dfced34",
+        "android_client_info": {
+          "package_name": "com.example.tradesphere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqemx9-JCU3u1YeV5yOLunOXrySHoH2Xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

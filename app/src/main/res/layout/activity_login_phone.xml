@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.LoginPhoneActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+
+        <ImageButton
+            android:id="@+id/toolbarBackBtn"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/medium"
+            android:textAllCaps="true"
+            android:text="Phone Login" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarRl"
+        android:padding="10dp">
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/profileTv"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="@color/gray"-->
+<!--            android:src="@drawable/person"-->
+<!--            app:shapeAppearanceOverlay="@style/ImageStyle_Circle" />-->
+
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/finall"/>
+
+        <TextView
+            android:id="@+id/loginLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/medium"
+            android:layout_below="@id/loginImage"
+            android:text="Login To Your Account" />
+
+        <RelativeLayout
+            android:id="@+id/phoneInputRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginLabelTv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="55dp"
+            android:visibility="visible">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/phoneCodeTil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:minHeight="56dp"
+                app:ccp_autoDetectCountry="false"
+                app:ccp_contentColor="@color/gray"
+                app:ccp_rememberLastSelection="true"
+                app:ccp_showFlag="true"
+                app:ccp_showNameCode="false" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberTil"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/phoneCodeTil"
+                android:hint="Phone Number"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp">
+
+                <EditText
+                    android:id="@+id/phoneNumberEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/medium"
+                    android:drawableStart="@drawable/phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/sendOtpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNumberTil"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/medium"
+                android:minHeight="@dimen/m_button_height"
+                android:text="Send OTP"
+                android:textAllCaps="true"
+                app:cornerRadius="8dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_below="@+id/phoneInputRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="CODE"/>
+
+        <RelativeLayout
+            android:layout_below="@id/loginLabelTv"
+            android:id="@+id/otpInputRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:visibility="invisible">
+<!--            android:visibility="invisible" -->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/otpTil"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:boxCornerRadiusBottomEnd="8dp"-->
+<!--            app:boxCornerRadiusBottomStart="8dp"-->
+<!--            app:boxCornerRadiusTopEnd="8dp"-->
+<!--            app:boxCornerRadiusTopStart="8dp"-->
+<!--            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/otpEt"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="6"-->
+<!--            />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinFromUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCount="6"
+                app:itemWidth="50dp"
+                app:itemHeight="50dp"
+                android:fontFamily="@font/medium"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:lineColor="#7E57C2"
+                style="@style/PinWidget.PinView"
+                android:inputType="number"
+                android:cursorVisible="true"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemRadius="5dp"/>
+        
+        <Button
+            android:id="@+id/verifyOtpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="8dp"
+            android:text="Verify"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/medium"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pinFromUser"
+            android:minHeight="@dimen/m_button_height"
+            />
+
+        
+        <TextView
+            android:id="@+id/resendOtpTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/didn_t_recieve_any_otp_resend"
+            android:layout_below="@id/verifyOtpBtn"
+            android:fontFamily="@font/medium"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <!--        <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCount="5"
+                app:itemWidth="50dp"
+                app:itemHeight="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:lineColor="#039BE5"
+                style="@style/PinWidget.PinView"
+                android:inputType="number"
+                android:cursorVisible="true"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemRadius="5dp"
+                />-->
+
+</RelativeLayout>
+</RelativeLayout>
