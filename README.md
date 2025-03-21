@@ -1,0 +1,7 @@
+TradeSphere is a versatile online marketplace, designed for users to seamlessly buy and sell a diverse range of products or property, whether new or second-hand. The app provides a platform for users to create, sell, buy or manage their ads, allowing direct communication through in-app messaging, calls, or popular messaging services like SMS and WhatsApp. With a user-friendly interface and features such as adding ads to favorites, TradeSphere allows people to connect, negotiate, and do their trade within a dynamic and user-driven marketplace. 
+
+TradeSphere does not involve payment integration as selling apps usually restrict online payments due to scam since the person selling is not a huge enterprise/any other business for most of the time, and are usually just individuals reselling products they’ve brought/have or running their own business for. 
+
+The app allows browsing before signing up/loging in, but other features such as chatting, account information, selling and my ads options are not available unless the individual has an account. If the individual clicks on any of those features prior to signing up/in, then they’re redirected to the login page, which includes options for recovering password and registering as well.
+
+I’ve used Firebase as my database, Canva for logo design, Flaticon for stickers relating to UI, and Figma for wireframing. I used Java for backend and frontend, and also used github repositories for other features necessary of my app. The chat backend was also done using Firebase with the help of Firebase Cloud Messaging. 
